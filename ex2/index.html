@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>c1-2 | ex2</title>
+        <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contactez nous</h1>
+        </header>
+    <main>
+        <form action="http://www.example.com/review.php" method="post">
+        <label>
+          Nom:
+          <input  type="text" name="name" size="30" maxlength="100" />
+        </label>
+        <br>
+
+        <label>
+          Prénom:
+          <input type="text" name="prenom" size="30" maxlength="100" />
+        </label>
+        <br>
+
+        <label>
+          Courriel:
+          <input type="email" name="email" size="30" maxlength="100" required />
+        </label>
+        <br />
+        
+        <div class="form-group">
+            <label for="type">Sujet</label>
+            <select id="sujet" name="sujet" required>
+                <option  hidden="true" disabled selected>Choisir un sujet</option>
+                <option value="demande-infos">Demande d'informations</option>
+                <option value="dépense">Feedback</option>
+                <option value="autres">Autres</option>
+            </select>
+        </div>
+
+      
+      <br>
+        <textarea placeholder="Saisissez votre message" rows="10" cols="40" name="message" id="message"></textarea>
+
+        <br>
+        <input type="button" value="Envoyer">
+    </form>
+    </main>
+
+    <footer>
+
+    </footer>
+    </div>
+</body>
+</html>
