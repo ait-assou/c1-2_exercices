@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #111827;
+    background-color: #F9FAFB;
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+
+
+/* HEADER */
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    cursor: pointer;
+}
+
+header li:hover {
+    color: red;;
+}
+
+/* MAIN */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    color: #1D4ED8;
+    text-align: center;
+
+}
+/* p 374151 */
+h2 {
+    color: #2563EB;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+article ol {
+    list-style: decimal;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+article>ul {
+    list-style: lower-roman;
+    padding-left: 2rem;
+}
+
+#presentation ul {
+    list-style:circle;
+}
+
+#objectif ul {
+    list-style: lower-roman;
+}
+
+
+/* FOOTER */
+#footer-container {
+    position: absolute;
+    bottom: 5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111827;
+    color: #E5E7EB;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+
+/* Media query */
+@media screen {
+    
+}
