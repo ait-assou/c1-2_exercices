@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,55 +28,71 @@
 
 body {
     color: #111827;
-    background-color: #ffffff;
+    background-color: #F9FAFB;
     font-size: 0.875rem;
     line-height: 1.25;
-
 }
 
 .container {
-    height: 100vh;
     display: grid;
     place-items: center;
+    height: 100vh;
 }
+
 
 main {
-    
+    display: grid;
+    place-items: center;
+    width: 90%;
+
+}
+
+/* styler la table */
+table {
+    border-collapse: collapse;
     padding: 1rem;
+    width: 90%;
 }
 
-h1 {
-    color: purple;
+thead {
+    text-align: left;
 }
 
-h1::after {
-    display: block;
-    content: "";
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid purple;
-}
-
-form {
-    background-color: #F1F5F9;
+th {
+    background-color: #0f172a;
+    color: white;
     padding: 1rem;
-    border-radius: 0.5rem;
+    text-align: left;
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e2e8f0;
 }
 
 
-input {
-    width: 100%;
-    margin-bottom: 1rem;
+tbody tr:nth-child(odd) {
+    background-color: #e2e8f0;
 }
 
-input[type="button"] {
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: purple;
-  color: #fefefe;
+tbody tr:nth-child(even) {
+    background-color: #fff;
 }
+
+tbody tr:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 #footer-container {
@@ -81,4 +119,3 @@ a {
 a:hover {
     opacity: 0.8;
 }
-
